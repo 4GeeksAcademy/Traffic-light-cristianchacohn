@@ -1,12 +1,53 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
 
-/* 
+  .semaforo {
+    background-color: #000;
+    width: 100px;
+    height: 300px;
+    border-radius: 25px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+  .semaforo::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    width: 20px;
+    height: 50px;
+    background-color: #000;
+  }
 
-*/
+  .luz {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: gray;
+  }
+
+  .rojo {
+    background-color: red;
+  }
+
+  .amarillo {
+    background-color: orange;
+  }
+
+  .verde {
+    background-color: green;
+  }
+  .light-on {
+    box-shadow: 0px 0px 50px 20px rgb(219, 241, 190);
+  }
+  
